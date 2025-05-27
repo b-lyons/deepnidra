@@ -19,19 +19,22 @@ export default function VideoLessonList({ lessons }: VideoLessonListProps) {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {lessons.map((lesson) => (
-        <Card key={lesson.id} className="bg-card/50 backdrop-blur-sm">
-          <CardHeader>
-            <img src={lesson.thumbnail} alt={lesson.title} className="w-full h-48 object-cover rounded-t-lg" />
+        <Card key={lesson.id} className="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl border-0">
+          <CardHeader className="p-0">
+            <img src={lesson.thumbnail} alt={lesson.title} className="w-full h-48 object-cover rounded-t-2xl" />
           </CardHeader>
           <CardContent>
-            <CardTitle className="text-primary">{lesson.title}</CardTitle>
-            <CardDescription>{lesson.duration}</CardDescription>
-            <p className="mt-2 text-foreground/80">{lesson.description}</p>
-            <video className="mt-4 w-full" controls>
+            <CardTitle className="text-[#3a4d39] font-serif">{lesson.title}</CardTitle>
+            <CardDescription className="text-[#5e6d5c]">{lesson.duration}</CardDescription>
+            <p className="mt-2 text-[#5e6d5c]">{lesson.description}</p>
+            <video className="mt-4 w-full rounded-lg shadow" controls>
               <source src={lesson.videoSrc} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <Button asChild className="mt-4 w-full">
+            <Button
+              asChild
+              className="mt-4 w-full rounded-full bg-[#b5cfc7] hover:bg-[#a0bfb3] text-[#3a4d39] font-semibold shadow-md transition"
+            >
               <Link href={`/video-lessons/${lesson.id}`}>Watch Lesson</Link>
             </Button>
           </CardContent>
