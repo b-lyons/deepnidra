@@ -8,6 +8,7 @@ interface AudioLesson {
   description: string;
   duration: string;
   audioSrc: string;
+  image?: string; // <-- Add this
 }
 
 interface AudioLessonListProps {
@@ -19,7 +20,14 @@ export default function AudioLessonList({ lessons }: AudioLessonListProps) {
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {lessons.map((lesson) => (
         <Card key={lesson.id} className="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl border-0">
-          <CardHeader>
+          <CardHeader className="p-0">
+            {lesson.image && (
+              <img
+                src={lesson.image}
+                alt={lesson.title}
+                className="w-full aspect-square object-cover rounded-t-2xl mb-4"
+              />
+            )}
             <CardTitle className="text-[#3a4d39] font-serif">{lesson.title}</CardTitle>
             <CardDescription className="text-[#5e6d5c]">{lesson.duration}</CardDescription>
           </CardHeader>

@@ -7,6 +7,7 @@ const audioLessons = [
 		description: 'A soothing audio guide through a complete DeepNidra session.',
 		duration: '20 minutes',
 		audioSrc: '/audio/guided-deepnidra-meditation.mp3',
+		image: '/images/a1.png',
 	},
 	{
 		id: '2',
@@ -14,6 +15,7 @@ const audioLessons = [
 		description: 'An audio-only DeepNidra session designed to improve your sleep.',
 		duration: '25 minutes',
 		audioSrc: '/audio/deepnidra-for-better-sleep.mp3',
+		image: '/images/a2.png',
 	},
 	{
 		id: '3',
@@ -21,6 +23,7 @@ const audioLessons = [
 		description: 'A short audio session for quick relaxation during your day.',
 		duration: '10 minutes',
 		audioSrc: '/audio/quick-deepnidra-relaxation.mp3',
+		image: '/images/a3.png',
 	},
 ]
 
@@ -37,7 +40,7 @@ export default function AudioLessonsPage() {
 						relaxation, restful sleep, and inner harmony.
 					</p>
 					<img
-						src="/placeholder.svg?height=300&width=800&text=Mystical+Sound+Journey"
+						src="/images/banner_a.png"
 						alt="Mystical sound journey banner"
 						className="w-full h-48 object-cover rounded-2xl shadow-lg mx-auto"
 					/>

@@ -21,7 +21,11 @@ export default function VideoLessonList({ lessons }: VideoLessonListProps) {
       {lessons.map((lesson) => (
         <Card key={lesson.id} className="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl border-0">
           <CardHeader className="p-0">
-            <img src={lesson.thumbnail} alt={lesson.title} className="w-full h-48 object-cover rounded-t-2xl" />
+            <img
+              src={lesson.thumbnail}
+              alt={lesson.title}
+              className="w-full aspect-square object-cover rounded-t-2xl mb-4"
+            />
           </CardHeader>
           <CardContent>
             <CardTitle className="text-[#3a4d39] font-serif">{lesson.title}</CardTitle>

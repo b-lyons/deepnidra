@@ -6,7 +6,7 @@ const videoLessons = [
 		title: 'Introduction to DeepNidra',
 		description: 'A visual guide to the basics of DeepNidra\'s yoga nidra technique.',
 		duration: '15 minutes',
-		thumbnail: '/placeholder.svg?height=200&width=300&text=Mystic+Intro',
+		thumbnail: '/images/v1.png',
 		videoSrc: '/videos/introduction-to-deepnidra.mp4'
 	},
 	{
@@ -14,7 +14,7 @@ const videoLessons = [
 		title: 'DeepNidra for Deep Relaxation',
 		description: 'Follow along with this video session for profound relaxation.',
 		duration: '30 minutes',
-		thumbnail: '/placeholder.svg?height=200&width=300&text=Relaxation+Journey',
+		thumbnail: '/images/v2.png',
 		videoSrc: '/videos/deepnidra-for-deep-relaxation.mp4'
 	},
 	{
@@ -22,7 +22,7 @@ const videoLessons = [
 		title: 'DeepNidra for Stress Relief',
 		description: 'A visual guide to using DeepNidra\'s techniques for stress relief.',
 		duration: '20 minutes',
-		thumbnail: '/placeholder.svg?height=200&width=300&text=Stress+Release',
+		thumbnail: '/images/v3.png',
 		videoSrc: '/videos/deepnidra-for-stress-relief.mp4'
 	}
 ]
@@ -37,7 +37,7 @@ export default function VideoLessonsPage() {
 						Explore our curated collection of yoga nidra video sessions for relaxation, stress relief, and inner peace.
 					</p>
 					<img
-						src="/placeholder.svg?height=300&width=800&text=Mystical+Video+Journey"
+						src="/images/banner_v.png"
 						alt="Mystical video journey banner"
 						className="w-full h-48 object-cover rounded-2xl shadow-lg mx-auto"
 					/>
