@@ -39,7 +39,7 @@ export default function VideoLessonsPage() {
 					<img
 						src="/images/banner_v.png"
 						alt="Mystical video journey banner"
-						className="w-full h-48 object-cover rounded-2xl shadow-lg mx-auto"
+						className="w-full h-88 object-cover rounded-2xl shadow-lg mx-auto bg-[#e8e3d0]"
 					/>
 				</div>
 				<VideoLessonList lessons={videoLessons} />

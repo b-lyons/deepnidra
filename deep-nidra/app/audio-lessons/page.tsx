@@ -3,26 +3,26 @@ import AudioLessonList from '../../components/audio-lesson-list'
 const audioLessons = [
 	{
 		id: '1',
-		title: 'Guided DeepNidra Meditation',
-		description: 'A soothing audio guide through a complete DeepNidra session.',
-		duration: '20 minutes',
-		audioSrc: '/audio/guided-deepnidra-meditation.mp3',
+		title: 'Shavasana',
+		description: 'Bills intro Shavasana.',
+		duration: '10 minutes',
+		audioSrc: '/audio/BL-Savasana.mp3',
 		image: '/images/a1.png',
 	},
 	{
 		id: '2',
-		title: 'DeepNidra for Better Sleep',
-		description: 'An audio-only DeepNidra session designed to improve your sleep.',
-		duration: '25 minutes',
-		audioSrc: '/audio/deepnidra-for-better-sleep.mp3',
+		title: 'Somatic Ignition',
+		description: 'A body scan to help you go deeper into the nidra.',
+		duration: '10 minutes',
+		audioSrc: '/audio/BL-Somatic-Ignition.mp3',
 		image: '/images/a2.png',
 	},
 	{
 		id: '3',
-		title: 'Quick DeepNidra Relaxation',
-		description: 'A short audio session for quick relaxation during your day.',
+		title: 'Symbols & Stories',
+		description: 'A section of the nidra that uses symbols and stories to help you realize your sankalpa.',
 		duration: '10 minutes',
-		audioSrc: '/audio/quick-deepnidra-relaxation.mp3',
+		audioSrc: '/audio/BL-Symbols-Stories.mp3',
 		image: '/images/a3.png',
 	},
 ]
@@ -40,9 +40,9 @@ export default function AudioLessonsPage() {
 						relaxation, restful sleep, and inner harmony.
 					</p>
 					<img
-						src="/images/banner_a.png"
+						src="/images/banner_a.jpg"
 						alt="Mystical sound journey banner"
-						className="w-full h-48 object-cover rounded-2xl shadow-lg mx-auto"
+						className="w-full h-88 object-cover rounded-2xl shadow-lg mx-auto"
 					/>
 				</div>
 				<AudioLessonList lessons={audioLessons} />
